@@ -1,0 +1,20 @@
+# Tracking an Order
+
+Tracking orders is the best way to run an efficient and speedy kitchen.
+
+Fresh KDS makes this easier than ever.
+
+First, you'll want to authenticate:
+<%= partial "partials/authentication.md.erb" %>
+
+Next, we want to ensure we have the record for a order:
+<%= partial "partials/get_an_order.md.erb" %>
+
+We have some choices for our next steps:
+- We could update the order
+- We might want to cancel it
+- We could report on its status
+
+It's this last option that we'll do as part of our tracking setup.
+
+Luckily, the status is already included in the data we returned.
